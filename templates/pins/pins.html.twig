@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pinterest | Home</title>
+</head>
+<body>
+
+<center><h1> Simple Pinterest </h1>
+ <a href="{{ path('app_create') }}">Create pin</a></center>
+
+{% for pin in pins %}
+<article>
+<h1>{{ pin.title }}</h1>
+{{ pin.description }}
+</article>
+{% endfor %}
+
+</body>
+</html>
